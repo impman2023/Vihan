@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashing Text and Changing Background</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        animation: changeBackground 2s infinite alternate, flashText 1s infinite;
+    }
+
+    @keyframes changeBackground {
+        from { background-color: black; }
+        to { background-color: white; }
+    }
+
+    @keyframes flashText {
+        from { color: red; }
+        to { color: rgb(0, 255, 0); }
+    }
+</style>
+</head>
+<body>
+    <h1>Hi Vihan</h1>
+</body>
+</html>
